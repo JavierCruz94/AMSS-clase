@@ -15,66 +15,66 @@ import java.util.List;
  */
 public class Escuela {
     
-    String nombre;
-    String city;
-    String direccion;
-    String telefono;
-    LinkedList<Departamento> departamentos;
-    LinkedList<Estudiante> estudiantes;
+    String strNombre;
+    String strCity;
+    String strDireccion;
+    String strTelefono;
+    LinkedList<Departamento> lkldepDepartamentos;
+    LinkedList<Estudiante> lklestEstudiantes;
 
-    public String getNombre() {
-        return nombre;
+    public String getStrNombre() {
+        return strNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setStrNombre(String strNombre) {
+        this.strNombre = strNombre;
     }
 
-    public String getCity() {
-        return city;
+    public String getStrCity() {
+        return strCity;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setStrCity(String strCity) {
+        this.strCity = strCity;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getStrDireccion() {
+        return strDireccion;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setStrDireccion(String strDireccion) {
+        this.strDireccion = strDireccion;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getStrTelefono() {
+        return strTelefono;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setStrTelefono(String strTelefono) {
+        this.strTelefono = strTelefono;
     }
 
-    public LinkedList<Departamento> getDepartamentos() {
-        return departamentos;
+    public LinkedList<Departamento> getLkldepDepartamentos() {
+        return lkldepDepartamentos;
     }
 
-    public void setDepartamentos(LinkedList<Departamento> departamentos) {
-        this.departamentos = departamentos;
+    public void setLkldepDepartamentos(LinkedList<Departamento> lkldepDepartamentos) {
+        this.lkldepDepartamentos = lkldepDepartamentos;
+    }
+
+    public LinkedList<Estudiante> getLklestEstudiantes() {
+        return lklestEstudiantes;
+    }
+
+    public void setLklestEstudiantes(LinkedList<Estudiante> lklestEstudiantes) {
+        this.lklestEstudiantes = lklestEstudiantes;
+    }
+
+    public void addEstudiante (Estudiante estudiante) {
+        this.lklestEstudiantes.addLast(estudiante);
     }
     
-    public void addDepartamento(Departamento departamento) {        
-        this.departamentos.addLast(departamento);
-    }
-
-    public LinkedList<Estudiante> getEstudiantes() {
-        return estudiantes;
-    }
-
-    public void setEstudiantes(LinkedList<Estudiante> estudiantes) {
-        this.estudiantes = estudiantes;
-    }
-
-    public void addEstudiante(Estudiante estudiante) {
-        this.estudiantes.addFirst(estudiante);
+    public void addDepartamento (Departamento departamento) {
+        this.lkldepDepartamentos.addLast(departamento);
     }
 }
